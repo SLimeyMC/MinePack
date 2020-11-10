@@ -1,0 +1,29 @@
+/* Pallete:
+Theme 1:
+   #352F44
+   #2A2438
+   #411E8F
+   #310A5D
+ */
+/* Edit this may change a significant change so think clearly! */
+title {
+    font-family: "Roboto Thin";
+    font-size: 48px;
+    text-decoration-color: whitesmoke;
+}
+
+body {
+    display: flex;
+    color: #352F44;
+}
+
+.code-area {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 90%;
+    border-color: #2A2438;
+    color: #352F44;
+    text-decoration-color: gold;
+    border-bottom-right-radius: 6px;
+}
