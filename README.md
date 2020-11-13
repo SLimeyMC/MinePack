@@ -1,7 +1,6 @@
 <div align="center">
     <img src="https://cdn.discordapp.com/attachments/727886672909435002/776708465115529256/com_-_final_-_Copy.png" alt="MinePack" align="center" height="128px">
     <h1></h1>
-    <br>
     <h1>MinePack</h1>
     <h3>The Official MinePack repo</h3>
 </div>
