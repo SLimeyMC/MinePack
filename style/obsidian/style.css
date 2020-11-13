@@ -6,54 +6,76 @@
      #310A5D
  */
 title #main-title {
-    font-family: monospace;
+    font-family: sans-serif;
     font-size: 48px;
-    text-decoration-color: whitesmoke;
+    color: whitesmoke;
+    border: #352F44 solid 1px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
 body {
-    display: flex;
     background-color: #352F44;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .button {
     position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/* Create the ul vertical */
+.button li {
     display: inline-block;
 }
 
 /* Dropdown Button */
 .db {
     list-style-type: none;
-    margin: 0;
+    alignment: center;
+    margin: 6px
     padding: 0;
     background-color: #411E8F;
+    color: whitesmoke;
+    border: 0;
 }
 /*/* When hover*/
 .db:hover{background-color: #2A2438}
 
 .navigation-bar {
     background-color: #411E8F;
+    alignment: top;
+    float: left;
+}
+
+/* Hide the menu */
+.dbc1 {
+    display: none;
 }
 
 /* Links inside the dropdown */
 .dbc a {
     color: whitesmoke;
+    background-color: #352F44;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
 /* Change color of dropdown links on hover */
-.dbc a:hover {background-color: #ddd;}
+.dbc a:hover {
+    background-color: #411E8F;
+    color: black;
+}
 
 /* Show the dropdown menu on hover */
 .db1:hover .dbc1 {display: block;}
 
 /* The Overlay (background) */
 .overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */
-    height: 100%;
+    /* Height & width depends JS first and second function */
+    height: 0;
     width: 0;
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */

@@ -1,13 +1,11 @@
-function allowDrop(ev) {
-    ev.preventDefault();
+/* Open when someone clicks on the span element */
+function openSet() {
+    document.getElementById("mySet").style.width = "100%";
+    document.getElementById("mySet").style.width = "100%";
 }
 
-function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-}
-
-function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeSet() {
+    document.getElementById("mySet").style.width = "0%";
+    document.getElementById("mySet").style.height = "0%";
 }

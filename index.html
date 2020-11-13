@@ -9,14 +9,15 @@
 <body>
 <!-- some noneless thing to keep thing tidy-->
 <div class="flex flexcollumn">
-    <div class="navigation-bar flex flexrow">
-        <!-- logo -->
-        <img src="https://cdn.discordapp.com/attachments/759507980738625566/776479570853232641/com.png" alt="MinePack" height="64" width="64">
-        <div class="flex flexcollumn">
-            <!-- main title -->
+    <div class="navigation-bar flex flexcollumn">
+        <div class="flex flexrow">
+            <!-- logo and Title -->
+            <img src="https://cdn.discordapp.com/attachments/759507980738625566/776479570853232641/com.png" alt="MinePack" height="48" width="48">
             <h2 id="main-title split">MinePack</h2>
+        </div>
+        <div class="flex flexcollumn">
             <!-- button -->
-            <div class="flex flexrow dropdown">
+            <div class="mySet flex flexrow dropdown">
                 <!-- hover dropdown to keep thing tidy -->
                 <ul class="button">
                     <!--
@@ -28,19 +29,18 @@
                     -->
                     <li><button class="db db1"><u>M</u>ain</button></li>
                     <div class="dbc dbc1">
-                        <span onclick="OpenSet()">Settings</span>
+                        <button onclick="OpenSet()"><u>S</u>ettings</button>
                         <!-- Settings overlay -->
-                        <div id="myNav" class="o">
+                        <div id="mySet" class="o">
                             <a href="javascript:void(0)" class="closebtn" onclick="closeSet()">&times;</a>
                             <div class="oc">
                                 <!-- Content -->
-                                <iframe class="setc flex flexcollumn"></iframe>
                             </div>
                         </div>
                     </div>
                     <li><button class="db db2"><u>P</u>roject</button></li>
-                    <li><button onclick=""><u>E</u>dit</button></li>
-                    <li><button onclick=""><u>V</u>iew</button></li>
+                    <li><button class="db db3"><u>E</u>dit</button></li>
+                    <li><button class="db db3"><u>V</u>iew</button></li>
                 </ul>
             </div>
         </div>
@@ -51,7 +51,6 @@
         <!-- Put the code here-->
         <div class="code-area">
             <textarea id="functionCommand" placeholder="Commands"></textarea>
-            <textarea id="metaCode" placeholder="Externals"></textarea>
         </div>
         <!-- Debugging-->
         <div class="terminal-area split">
