@@ -6,18 +6,14 @@
     <link href="style/obsidian/style.css" rel="stylesheet" type="text/css">
     <link href="program/main.js" rel="script">
 </head>
-<body>
-<!-- some noneless thing to keep thing tidy-->
-<div class="flex flexcollumn">
-    <div class="navigation-bar flex flexcollumn">
-        <div class="flex flexrow">
-            <!-- logo and Title -->
-            <img src="https://cdn.discordapp.com/attachments/759507980738625566/776479570853232641/com.png" alt="MinePack" height="48" width="48">
-            <p id="main-title split"><b>MinePack</b></p>
-        </div>
-        <div class="flex flexcollumn">
+<header>
+    <!-- some noneless thing to keep thing tidy-->
+    <div class="flex flexcollumn">
+        <div class="navigation-bar flex flexrow">
+            <!-- Title -->
+            <p id="main-title"> &nbsp; <b>Datacraft</b> &nbsp; </p>
             <!-- button -->
-            <div class="mySet flex flexrow dropdown">
+            <div class="mySet dropdown">
                 <!-- hover dropdown to keep thing tidy -->
                 <ul class="button">
                     <!--
@@ -44,28 +40,29 @@
                 </ul>
             </div>
         </div>
+</header>
+<body>
+<div class="flex flexrow">
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
     </div>
-    <div class="flex flexrow">
-        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-        </div>
-        <!-- Put the code here-->
-        <div class="code-area">
-            <textarea id="functionCommand" placeholder="Commands"></textarea>
-        </div>
-        <!-- Debugging-->
-        <div class="terminal-area split">
-            <iframe id="terminal-windows"></iframe>
-            <script type="text/javascript">
-                function run() {
-                    let command = document.querySelector(".editor #functionCommand").value;
-                    let output = document.querySelector(".editor #terminal_area");
-                    console.log(command, output);
-                }
-            </script>
-        </div>
+    <!-- Put the code here-->
+    <div class="code-area">
+        <textarea id="functionCommand" placeholder="Commands"></textarea>
     </div>
-    <!-- Wanna test your command?-->
-    <split" placeholder="Commands Area"></textarea>
+    <!-- Debugging-->
+    <div class="terminal-area split">
+        <iframe id="terminal-windows"></iframe>
+        <script type="text/javascript">
+            function run() {
+                let command = document.querySelector(".editor #functionCommand").value;
+                let output = document.querySelector(".editor #terminal_area");
+                console.log(command, output);
+            }
+        </script>
+    </div>
+</div>
+<!-- Wanna test your command?-->
+<split" placeholder="Commands Area"></textarea>
 </div>
 </body>
 </html>
