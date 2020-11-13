@@ -1,4 +1,4 @@
-/* Pallete:
+/* Palette:
 * Theme 1:
      #352F44
      #2A2438
@@ -6,47 +6,99 @@
      #310A5D
  */
 title #main-title {
-    font-family: "Roboto Thin";
+    font-family: monospace;
     font-size: 48px;
     text-decoration-color: whitesmoke;
 }
 
 body {
     display: flex;
-    color: #352F44;
+    background-color: #352F44;
 }
 
+/* The container <div> - needed to position the dropdown content */
+.button {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Button */
+.db {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #411E8F;
+}
+/*/* When hover*/
+.db:hover{background-color: #2A2438}
+
+.navigation-bar {
+    background-color: #411E8F;
+}
+
+/* Links inside the dropdown */
+.dbc a {
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dbc a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.db1:hover .dbc1 {display: block;}
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0.19215686274, 0.03921568627,0); /* Fallback color */
+    background-color: rgba(0.19215686274, 0.03921568627,0, 0.9); /* Color w/opacity */
+    backdrop-filter: blur(6px); /* Blur backdrop */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* code area color */
 .code-area {
-    display: flex;
+    display: flex; /* To display as column*/
     flex-direction: column;
-    width: 50%;
+    width: 50%; /* slice them to quarter res to be used next */
     height: 50%;
     border-color: #2A2438;
     color: #352F44;
-    text-decoration-color: gold;
-    border-bottom-right-radius: 6px;
+    border-bottom-right-radius: 6px; /* radius */
 }
-
+/* the textarea */
 .code-area textarea {
     resize: none;
     outline: none;
     width: 100%;
     height: 50%;
     font-size: 18px;
-    padding: 0px;
+    padding: 0;
 }
 
+/* preview area style */
 .preview-area {
     resize: both;
     width: 100%;
 }
-
+/* iframe */
 .preview-area iframe {
     width: 100%;
     height: 100%;
     border: none;
 }
 
+/* basic styling */
 .flex {
     display: flex;
 }
