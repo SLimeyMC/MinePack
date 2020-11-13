@@ -3,14 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>MinePack</title>
-    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="style/obsidian/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <div class="code-area">
-      <textarea id="functionCommand" placeholder="Commands"></textarea>
-      <textarea id="metaCode" placeholder="Externals"></textarea>
-  </div>
-  <div class="terminal-area">
-      <iframe id="terminal-windows"></iframe>
+<div style="display: flex; flex-direction: column;">
+    <h1 id="main-title split">MinePack</h1>
+    <div style="display: flex; flex-direction: row">
+        <div class="project-area">
+            <
+        </div>
+        <div class="code-area">
+            <textarea id="functionCommand" placeholder="Commands"></textarea>
+            <textarea id="metaCode" placeholder="Externals"></textarea>
+        </div>
+        <div class="terminal-area split">
+            <iframe id="terminal-windows"></iframe>
+            <script type="text/javascript">
+                function run() {
+                    let command = document.querySelector(".editor #functionCommand").value;
+                    let output = document.querySelector(".editor #terminal_area");
+                    console.log(command, output);
+                }
+            </script>
+        </div>
+    </div>
+    <textarea id="commands-area split" placeholder="Commands Area"></textarea>
+</div>
 </body>
 </html>
