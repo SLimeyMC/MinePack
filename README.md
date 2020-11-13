@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://cdn.discordapp.com/attachments/759507980738625566/776479570853232641/com.png" alt="MinePack" align="center" height="128px">
+    <img src="https://cdn.discordapp.com/attachments/727886672909435002/776708465115529256/com_-_final_-_Copy.png" alt="MinePack" align="center" height="128px">
     <h1></h1>
     <br>
     <h1>MinePack</h1>
