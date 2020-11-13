@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <title>MinePack</title>
     <link href="style/obsidian/style.css" rel="stylesheet" type="text/css">
+    <link href="program/main.js" rel="script">
 </head>
 <body>
-<div style="display: flex; flex-direction: column;">
-    <h1 id="main-title split">MinePack</h1>
-    <div style="display: flex; flex-direction: row">
-        <div class="project-area">
-            <
+<div class="flex flexcollumn">
+    <div class="navigation-bar flex flexrow">
+        <div class="flex flexcollumn">
+            <img src="https://cdn.discordapp.com/attachments/759507980738625566/776479570853232641/com.png" alt="MinePack">
+            <h1 id="main-title split">MinePack</h1>
+            <div class="flex flexrow">
+
+            </div>
+        </div>
+    </div>
+    <div class="flex flexrow">
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
         </div>
         <div class="code-area">
             <textarea id="functionCommand" placeholder="Commands"></textarea>

@@ -5,7 +5,6 @@
      #411E8F
      #310A5D
  */
-/* Edit this may change a significant change so think clearly! */
 title #main-title {
     font-family: "Roboto Thin";
     font-size: 48px;
@@ -46,4 +45,16 @@ body {
     width: 100%;
     height: 100%;
     border: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.flexcollumn {
+    flex-direction: column;
+}
+
+.flexrow {
+    flex-direction: row;
 }
