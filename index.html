@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>MinePack</title>
+    <!-- Style header -->
     <link href="style/obsidian/style.css" rel="stylesheet" type="text/css">
+    <!-- Main JS -->
     <link href="program/main.js" rel="script">
+    <!-- Hl.JS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+    <!-- and it's easy to individually load additional languages -->
+    <script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/go.min.js"></script>
+    <script type="text/javascript" src="/path/to/highlight.min.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="/path/to/highlightjs-mcfunction/dist/mcfunction.min.js"></script>
 </head>
 <header>
     <!-- some noneless thing to keep thing tidy-->
@@ -47,7 +56,8 @@
     </div>
     <!-- Put the code here-->
     <div class="code-area">
-        <textarea id="functionCommand" placeholder="Commands"></textarea>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <pre><code id="code-area" placeholder="Commands Area"></code></pre>
     </div>
     <!-- Debugging-->
     <div class="terminal-area split">
@@ -62,9 +72,8 @@
     </div>
     <div>
         <!-- Wanna test your command?-->
-        <textarea id="command-terminal" placeholder="Commands Area"></textarea>
+        <pre><code id="command-terminal" placeholder="Commands Area"></code></pre>
     </div>
-</div>
 </div>
 </body>
 </html>
